@@ -19,36 +19,26 @@
   <modules>
     <module id="${rootArtifactId}-kjar" dir="__rootArtifactId__-kjar" name="${rootArtifactId}-kjar">
       <fileSets>
+        <!-- sources -->
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
           </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <!-- resources -->
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
           <directory>src/main/resources</directory>
         </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/repository</directory>
-          <includes>
-            <include>**/*.conf</include>
-            <include>**/*.wid</include>
-            <include>**/*.png</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/assembly</directory>
-          <includes>
-            <include>**/*.xml</include>
-          </includes>
-        </fileSet>
+        <!-- test sources -->
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/test/java</directory>
           <includes>
             <include>**/*.java</include>
           </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+        <!-- test resources -->
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
           <directory>src/test/resources</directory>
         </fileSet>
       </fileSets>
@@ -66,11 +56,6 @@
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/repository</directory>
-          <includes>
-            <include>**/*.conf</include>
-            <include>**/*.wid</include>
-            <include>**/*.png</include>
-          </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
           <directory>src/assembly</directory>
@@ -102,11 +87,6 @@
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
           <directory>src/main/repository</directory>
-          <includes>
-            <include>**/*.conf</include>
-            <include>**/*.wid</include>
-            <include>**/*.png</include>
-          </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
           <directory>src/assembly</directory>

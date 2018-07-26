@@ -30,7 +30,6 @@
         </excludes>
       </resource>
     </resources>
-    
     <extensions>
       <extension>
         <groupId>org.apache.maven.archetype</groupId>
